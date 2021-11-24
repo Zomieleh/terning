@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title> Oppgave </title>
+    <meta charset="utf-8">
+</head>
+<body>
+<img src="./SVG" id="pic-result"/>
+<script>
+
+    var terning = Math.floor(Math.random() * 6) + 1;
+    var pic = document.getElementById("pic-result");
+    if (terning == 1) pic.setAttribute('src', '1.svg');
+    else if (terning == 2) pic.setAttribute('src', '2.svg');
+    else if (terning == 3) pic.setAttribute('src', '3.svg');
+    else if (terning == 4) pic.setAttribute('src', '4.svg');
+    else if (terning == 5) pic.setAttribute('src', '5.svg>');
+    else  pic.setAttribute('src', '6.svg');
+</script>
+</body>
+</html>
